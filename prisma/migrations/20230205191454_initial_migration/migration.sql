@@ -35,6 +35,8 @@ ALTER TABLE "snaps" ADD CONSTRAINT "snaps_authorId_fkey" FOREIGN KEY ("authorId"
 
 -- AddForeignKey
 ALTER TABLE "snaps" ADD CONSTRAINT "snaps_topicId_fkey" FOREIGN KEY ("topicId") REFERENCES "topics"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+<<<<<<< HEAD
+=======
 
 
 -- INSERT USERS DATA
@@ -80,3 +82,4 @@ INSERT INTO snaps ("name", "image", "authorId", "topicId", "createdAt") VALUES (
 INSERT INTO snaps ("name", "image", "authorId", "topicId", "createdAt") VALUES ('Kitty', 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(90).webp', '5', '11', '2023-01-31T22:34:27.012');
 INSERT INTO snaps ("name", "image", "authorId", "topicId", "createdAt") VALUES ('Paradise', 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(91).webp', '3', '8', '2023-01-31T22:34:27.012');
 INSERT INTO snaps ("name", "image", "authorId", "topicId", "createdAt") VALUES ('elephant', 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(97).webp', '4', '12', '2023-01-31T22:36:30.283');
+>>>>>>> 33d334e24818d04565481ecddb02fcc7f5530fd5
